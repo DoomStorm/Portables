@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*The wrapper is the primary content width*/
+.container {
+	width:900px;
+	margin:0 auto;
+	text-align:left;
+	margin-bottom:30px
+}
+
+header {
+	background:url(img/header.png) no-repeat top center;
+	padding-top:30px;
+	color:#FFF;
+}
+
+header hgroup {
+	margin-bottom:10px;
+}
+
+header h1, header h2 {
+	text-align:center;
+	line-height:90%;
+	font-weight:normal;
+	text-shadow:2px 2px 4px #000;
+	font-family: 'IM Fell French Canon SC', serif;
+}
+
+header h1 a,header h1 a:visited, header h1 a:hover {
+	text-decoration:none;
+	color:#FFF;
+	font-size:3em;
+}
+
+header nav {
+	height:32px;
+	margin:0 80px;
+	margin-top:40px;
+	border:2px solid #e57e1c;
+	border-top:2px solid #eacd38;
+	background: #ffec32; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffec32 0%, #fabf30 48%, #ed841c 51%, #d36e1b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffec32), color-stop(48%,#fabf30), color-stop(51%,#ed841c), color-stop(100%,#d36e1b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffec32 0%,#fabf30 48%,#ed841c 51%,#d36e1b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffec32 0%,#fabf30 48%,#ed841c 51%,#d36e1b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffec32 0%,#fabf30 48%,#ed841c 51%,#d36e1b 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffec32 0%,#fabf30 48%,#ed841c 51%,#d36e1b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffec32', endColorstr='#d36e1b',GradientType=0 ); /* IE6-9 */
+}
+
+header nav li {
+	float:left;
+}
+
+header nav a, header nav a:visited {
+	display:block;
+	margin:0 5px 0 5px;
+	padding:5px 10px;
+	color:#FFF;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:2px 2px 4px #000;
+}
+
+header nav a:hover {
+	color:#CCC;
+}
