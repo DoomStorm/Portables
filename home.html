@@ -1,0 +1,199 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Another Minecraft Server</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type='text/javascript' src='swfobject.js'></script>
+	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+	<link rel="shortcut icon" href="http://minecraft.jaakko.se/img/creeper.ico" />
+	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen, print" />
+	<link rel="stylesheet" href="css/navigation.css" type="text/css" media="screen, print" />
+        <link rel="stylesheet" href="css/players.css" type="text/css" media="screen, print" />
+	<link rel="stylesheet" href="css/footer.css" type="text/css" media="screen, print" />
+	<link rel="stylesheet" href="css/player.css" type="text/css" media="screen, print" />
+
+<script type="text/javascript"> 
+$(function() {
+	$('#360p').click(function() {
+		$('#player').animate({width:'640',height:'360'});
+	});
+	$('#480p').click(function() {
+		$('#player').animate({width:'853',height:'480'});
+	});
+	$('#720p').click(function() {
+		$('#player').animate({width:'1280',height:'720'});
+	});
+});
+</script> 
+
+</head>
+<body>
+<div id="maxheight">
+	<div class="navigation">
+	<ul class="topnav">
+	</ul>
+	<div class="content">
+	<h2>Welcome to Another Minecraft Server.</h2>
+<!--	<h3><font color="red">server shutdown until late this evening</font></h3>-->
+	<h3>Short notice</h3>
+        <p>On this website you can find some useful information about the server itself and ongoing processes.</p>
+        <p>Server is still fairly new and it still has its issues but we're working on it.</p>
+        <p>Any players having memory issues could try reducing the View distance in options or toggle it with key 'F'.</p>
+		        <h4>Try it out!</h4>
+                <ul>
+                <li>Server ip: AnotherMinecraftServer.us.to:25565</li>
+                <li>Monsters are TRUE, so beware of the dark corners.</li>
+                </ul>
+
+        <h2>News</h2>
+
+	<p>25/11-2015 - MobArena and minor fixes!</ br>
+	<ul class="news_note">
+	<li>Mobarena is on the way! and it will be fun!</li>
+	<li>We will be working on getting some fixes done to ensure a smoother gameplay =D</li>
+	</ul>
+	</p>
+<!--
+        <p>2012-11-06 - CRASH!!</ br>
+        <ul class="news_note">
+        <li>Servercrash, hardware failure.</li>
+	<li>HDD broke down and some data was lost (dynmap data)</li>
+        </ul>
+        </p>
+
+	<p>2011-09-27 - MobArena update</ br>
+	<ul class="news_note">
+	<li>Mobarena was updated to v0.94.4.81</li>
+	</ul>
+	</p>
+
+
+	<p>2012-09-14 - New plugins installed!</ br>
+	<ul class="news_note">
+	<li>MobArena v0.94.4.80 - Arena plugin.</li>
+	<li>LWC v4.3.0 (b736-git-1b1150b1) - Lightweight block protection for Chests, furnaces, dispensers, doors etc.</li>
+	<li>Vault v1.2.18-b229 - Permissions, Chat & Economy API.</li>
+	<li>WorldEdit v5.4.2 - In-game world editor</li>
+	<li>WorldGuard v643-19be2bf - In-game world and region protection</li>
+	</ul>
+	<pre class="prenote">
+	<tt style="font-size: 1.2em;">
+[BKCommonLib]		BKCommonLib version 1.24!		// Minor tweaks (no idea of )
+[Vault]			Vault v1.2.18-b229			// API for Economy
+[dynmap]		dynmap v0.80-1315			// Dynamic maps
+[MobArena]		MobArena v0.94.4.80			// Fight against mobs
+[LWC]			LWC v4.3.0 (b736-git-1b1150b1)		// Lightweight protection plugin
+[Permissions]		Permissions v3.1.6			// Permissions
+[GroupManager]		GroupManager v2.0 (2.9.3) (Phoenix) 	// Group based permissions
+[WorldEdit]		WorldEdit v5.4.2			// World editing (required for protection)
+[WorldGuard]		WorldGuard v643-19be2bf			// World protection
+[Essentials]		Essentials v2.9.3			// Collection of all kind of commands
+[EssentialsProtect]	EssentialsProtect v2.9.3		// Basic protection (signs,rails, blacklisted blocks etc.)
+[EssentialsSpawn]	EssentialsSpawn v2.9.3			// Spawn protection and repositioning
+[EssentialsChat]	EssentialsChat v2.9.3			// Chat formats
+	</tt>
+	</pre>
+	</p>
+
+	<p>2012-09-13 - Introducing MobArena!</ br>
+	<ul class="news_note">
+	<li>After hours of work, the arena was completed and is now up and running.</li>
+	<li>Join Arena with command /MA join. You will be sent to the arena lobby room with empty inventory for character selection.</li>
+	<li>Choose class and ready up with a punch in the iron block!</li>
+	<li>Beat the waves of monsters to gain rewards.</li>
+	<li>You will NOT lose your stuff, after each battle, you'll get your inventory back</li>
+	</ul>
+	</p>
+
+	<p>2012-09-06 - Downtime</ br>
+	<ul class="news_note">
+	<li>Servers are shut down; installing new network</li>
+	</ul>
+	</p>
+
+	<p>2012-08-29 - Servercrash</ br>
+	<ul class="news_note">
+	<li>Problem solved, world was rollbacked and everything up and running again</li>
+	<li>dynmap updated to 0.80</li>
+	<li>NoLagg removed</li>
+	<li>Backup scripts improved.</li>
+	<li>Enabled Trading with Signs, experimental</li>
+	</ul>
+	</p>
+
+        <p>2012-08-28 - Minecraft updated to 1.3.2.</ br>
+        <ul class="news_note">
+        <li>Servermod CraftBukkit version git-Bukkit-1.3.2-R0.1-b2352jnks (MC: 1.3.2) (Implementing API version 1.3.2-R0.1)</li>
+	<li>Installed new plugin NoLagg 1.88.1 (defaults).</li>
+	<li>Java switched to openjdk 7</li>
+        </ul>
+	</p>
+
+	<p>2012-08-27 - cronjobs edited</ br>
+	<ul class="news_note">
+	<li>More frequent transfer from RAMdisk to physical hdd</li>
+	</ul>
+	</p>
+
+	<p>2012-08-26 - Plugins installed</ br>
+	<ul class="news_note">
+	<li>New plugin Essentials 2.9.3</li>
+	<li>New plugin GroupManager v2.0 (2.9.3)</li>
+	</ul>
+	</p>
+
+        <p>2012-08-09 - Minecraft updated to 1.3.1.</ br>
+        <ul class="news_note">
+        <li>Servermod CraftBukkit version git-Bukkit-1.3.1-R1.0-b2320jnks (MC: 1.3.1) (Implementing API version 1.3.1-R1.0)</li>
+	<li>Loaded plugin dynmap v0.70-1263</li>
+	<li>All other plugins unloaded until further notice</li>
+	<li>World Tarse was erased due to all world changes during game developement.</li>
+	<li>New world trcE was created during downtime and have replaced the old map.</li>
+	</ul>
+	</p>
+
+	<p>2012-07-30 - Minecraft updated to 1.7.3.<br />
+	<ul class="news_note">
+	<li>Servermod Craftbukkit version git-Bukkit-0.0.0-945-g73697a4-b1000jnks (MC: 1.7.3) (recommended build: #1000</li>
+	<li>Plugin Essentials build 2.5.6</li>
+	</ul>
+
+        <p>2012-07-02 - Minecraft updated to 1.7.2.<br />
+        <ul class="news_note">
+        <li>Servermod Craftbukkit version git-Bukkit-0.0.0-904-g9277096-b953jnks (MC: 1.7.2) (recommended build: #953)</li>
+        <li>Plugin Essentials build 2.4.1</li>
+        </ul>
+
+	<p>2012-06-01 - Minecraft updated to 1.6.6<br />
+	<ul class="news_note">
+	<li>Servermod Craftbukkit version git-Bukkit-0.0.0-766-g3fc0460-b818jnks (MC: 1.6.6) (recommended build: #818)</li>
+	<li>Plugin Essentials Devbuild 2.3.1</li>
+	<li>Nether is now enabled and will be running on same RAMDisk as Tarse. Untested but seems to work with ordinary gates. (bring your lighter to the other side incase return gate isnt lit.</li>
+	<li>Testing new GMap formats. Enabling normal, lighting, caves, spawn...</li>
+	</ul>
+	<p>2012-04-27 - Minecraft updated to 1.5_02<br />
+	<ul class="news_note">
+	<li>Servermod Craftbukkit version git-Bukkit-0.0.0-700-gf3ae4c3-b733jnks (MC: 1.5_02) (recommended build: #733)</li>
+	<li>Plugin Essentials build 2.2.6</li>
+	</ul>
+	<p>2012-04-09 - Installed new CRON jobs. <br />
+	<ul class="news_note">
+	<li>Server rsyncs the world from RAMdisk to backup harddrive every 30 minutes. </li>
+	<li>Server now automatically <strong>should</strong> backup the world every 3rd hour and update download link.<br />Backup occurs 3:15, 6:15, 9:15,.. etc. </li>
+	<li>Overview maps are now updated every 6th hour. <br /> Map updates 3:45, 9:45, 15:45,.. etc. </li>
+	</ul>
+	<p>2012-04-09 - Server updated to craftbukkit recommended release #670 (MC 1.4). Essentials updated to 2.10.25. <br />
+	<ul class="news_note">
+	<li>You can now set new home with Beds and/or with /sethome. </li>
+	<li>Only one Home can be set. </li>
+	<li>After being killed, you should spawn to home. <br />This is not tested completely as last version was buggy, expect some issues..</li>
+	</ul>
+	</p>
+	<p>2012-04-01 - Server updated to craftbukkit recommended release #612 (MC 1.4). Essentials updated to 2.10</p>
+	<p>2012-03-29 - Updated some plugins. Nothing new really...Players now respawn to home after death.</p>
+	<p>2012-03-27 - /world nether killed the server. Up and running again. Disabled the command until further notice.</p>
+        <p>2012-03-27 - Tarse Central Station. See <a href="#" style="text-decoration:line-through; color:#333;">HERE</a> how the system works and how to use it.</p>
+        <h3>Screenshots</h3>
+        <p>At some point there will be posted some screenshots of completed projects.</p>
+

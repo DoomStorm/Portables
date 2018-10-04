@@ -1,0 +1,67 @@
+div.footer {
+        padding: 0;
+        width: 964px; height: 25px; text-align: center; color: #111;
+        position: fixed; bottom: 0;
+	background-image: url('../img/footer.png'); background-repeat: repeat-x; background-position: 0 -10px;
+}
+
+ul.ft_nav {
+	list-style: none;
+	padding: 0 20px;
+	margin: 0;
+	float: left;
+	width: 926px;
+	background: #222;
+	background: url(../img/topnav_bg.gif) repeat-x;
+}
+ul.ft_nav li {
+	float: left;
+	margin: 0; display: block; 
+	padding: 0 15px 0 0;
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+ul.ft_nav li a{
+	padding: 10px 7px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	float: left;
+	font-weight: normal;
+}
+ul.ft_nav li a:hover{
+	background: url(../img/topnav_hover.gif) no-repeat center top;
+}
+ul.ft_nav li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url(../img/subnav_btn.gif) no-repeat center top;
+}
+ul.ft_nav li span.ft_subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.ft_nav li ul.ft_subnav {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 0; top: 35px;
+	background: #333;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	width: 180px;
+	border: 1px solid #111;
+}
+ul.ft_nav li ul.ft_subnav li{
+	margin: 0; padding: 0;
+	border-top: 1px solid #252525; /*--Create bevel effect--*/
+	border-bottom: 1px solid #444; /*--Create bevel effect--*/
+	clear: both;
+	width: 180px;
+}
+html ul.ft_nav li ul.ft_subnav li a {
+	float: left;
+	width: 152px;
+	background: #333 url(../img/dropdown_linkbg.gif) no-repeat 10px center;
+	padding-left: 20px;
+}
+html ul.ft_topnav li ul.ft_subnav li a:hover { /*--Hover effect for subnav links--*/
+	background: #222 url(../img/dropdown_linkbg.gif) no-repeat 10px center;
+}
